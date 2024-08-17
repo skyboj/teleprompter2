@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: text-sync-app
+    env: node
+    buildCommand: 'npm install'
+    startCommand: 'node server.js'
+    plan: free
+    regions:
+      - oregon
+    ports:
+      - 80
